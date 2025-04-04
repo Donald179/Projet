@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color:  rgb(21, 21, 56);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+header{
+    height: 50px;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header a{
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+header a:hover{
+    color: darkblue;
+}
+
+header nav ul{ 
+    padding-right: 50px;
+    padding-top: 15px;
+    text-decoration: none;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+header nav ul li a:hover{
+    color: rgb(233, 225, 225);
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.presentation{
+    display: flex;
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    flex-direction:column; /* Aligner les éléments en colonne */
+}
+.presentation h1{
+    background-color: none;
+    color: rgb(233, 225, 225);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+.presentation img{
+    border-radius: 350px; /* Arrondir l'image */
+    display: block; /* Assurez-vous que l'image est un bloc */
+    justify-content: right;
+    margin: 0 800px; /* Centrer l'image horizontalement */
+    width: 800px;
+    height: 600px;
+    object-fit: cover; /* Ajuste l'image pour couvrir le conteneur */
+    transition: transform 0.3s; /* Animation de transformation */
+}
+#services{
+    background-color:  rgb(21, 21, 56);
+    display: grid; /* Utilisation de CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    gap: 20px; /* Espacement entre les éléments */
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    max-width: 1200px; /* Limiter la largeur totale */
+    margin: 0 auto; /* Centrer la section horizontalement */
+    padding: 20px; /* Ajouter un peu de padding pour l'espacement interne */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+}
+
+#services .services {
+    height: 200px;
+    width: 500px;
+    text-align: center; /* Centrer le texte dans chaque bloc */
+    border: 1px solid #ddd; /* Optionnel : ajouter une bordure pour chaque bloc */
+    border-radius: 10px; /* Optionnel : coins arrondis */
+    padding: 20px; /* Espacement interne */
+    background-color: #fff; /* Couleur de fond blanche */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour le relief */
+    transition: transform 0.3s; /* Animation de transformation */
+}
+#services .services:hover {
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+#services .services a{
+    text-decoration: none;
+    color: black; /* Couleur du texte */
+    font-weight: bold;
+    font-size: 20px;
+}
+#services .services a p{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#services .services h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px; /* Espacement entre le titre et le texte */
+}
+
+#services .services .icone-servives i {
+    font-size: 50px; /* Agrandir les icônes */
+    color: darkblue; /* Couleur des icônes */
+    margin-bottom: 10px; /* Espacement entre l'icône et le texte */
+    transition: transform 0.3s; /* Animation de transformation */
+}
+.contacter{
+    display: flex;
+    justify-content: space-between; /* Centrer le contenu horizontalement */
+}
+.contacter .apropos {
+    margin: 30px;
+    background-color: #f9f9f9;
+    width: 50%;
+    height: 550px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+.contacter .apropos h2{
+    padding: 50px;
+    background-color: none;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+.contacter .apropos p{
+    padding: 50px;
+    background-color: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+.contacter .contact{
+    text-align: center;
+    width: 50%;
+}
+.contacter .contact h2{
+    color: rgb(233, 225, 225);
+    padding: 50px;
+    background-color: none;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 80%; /* Largeur de 80% */
+    padding: 10px; /* Espacement interne */
+    margin: 10px auto; /* Espacement externe */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères */
+    font-weight: bold;
+}
+
+textarea{
+    width: 80%; /* Largeur de 80% */
+    padding: 10px; /* Espacement interne */
+    margin: 10px auto; /* Espacement externe */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères */
+    font-weight: bold;
+}
+form button[type="submit"]{
+    background-color: darkblue; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 20px; /* Taille de police */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer; /* Curseur en main au survol */
+    transition: background-color 0.3s; /* Animation de changement de couleur */
+}
+
+form button[type="submit"]:hover{
+    background-color: #0056b3; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+
+footer{
+    height: 100px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+footer p{
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.details{
+    display: flex;
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    flex-direction:column; /* Aligner les éléments en colonne */
+}
+.details img{
+    border-radius: 50px;
+    border: 5px solid darkblue;
+    width: 800px;
+    height: 600px;
+    transition: transform 0.3s; /* Animation de transformation */
+}
